@@ -1,0 +1,199 @@
+/* Boiler Palte of the css */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Afacad" , sans-serif;
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+BODY::-webkit-scrollbar{
+    width: 0px;
+}
+/* Bolier plate of the CSS has been completed */
+
+
+
+/* *****************Start of DESIGNING*************** */
+
+
+/* MAIN , BACK , TOP Section Design. */
+section#main{
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* #back , #top are styled in such a way that they will behave just like a top and bootom layes of a stack/queue */
+/* back layer design , lastly designed */
+section#back{
+    width: 100%;
+    height: 100vh;
+}
+
+section#back > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* top layer designing  ,DESINNED FIRST*/
+section#top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+}
+
+section#top > section#working-area{
+    margin: 0 auto;
+    width: 85%;
+    height: 99vh;
+    max-width: 1920px;
+
+    position: relative;
+
+}
+/* MAIN , BACK , TOP Section Design Completed. */
+
+/* Navbar design start */
+nav#navbar{
+    width: 100%;
+    padding: 20px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav#navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    pointer-events: all;
+}
+
+div#nav-left{
+    height: 100%;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+div#nav-left > img{
+    height: 70px;
+}
+
+div#nav-right{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Navbar design ended */
+
+/* Hero Section design starts */
+
+section#hero{
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+section#hero > div#hero-left{
+    min-width: 45%;
+    position: relative;
+}
+
+#hero-left > .element{
+    height: 8vw;
+    overflow: hidden;
+}
+
+#hero-left > .element >  h1{
+    font-family: 'Bodoni Moda', serif;
+    font-family: 'Oswald', sans-serif;
+    word-spacing: 10px;
+    font-weight: 700;
+    font-size: 6vw;
+    line-height: 1.4;
+    background-image: linear-gradient(43deg, #ffffff 0%, #fff3fe 46%, #ff7b7b 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+
+#hero-left > button#explore-now {
+    background-color: rgb(90, 0, 90);
+    color: rgb(255, 255, 255);
+    font-family: 'Oswald', sans-serif;
+    width: 50%;
+    padding: 0.8vw 1vw;
+    font-size: 2vw;
+    font-weight: 900;
+    margin-top: 3vw;
+    letter-spacing: 5px;
+    word-spacing: 7px;
+    pointer-events: all;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#hero-left > button#explore-now:hover{
+    border: 2px solid gold;
+}
+
+section#hero > div#hero-right{
+    width: 20%;
+    color: white;
+    padding: 1em;
+
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+div#hero-right > p{
+    text-align: right;
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+}
+
+#img-div{
+    width: 100%;
+    height: 170px;
+
+    margin-top: 20px;
+    margin-bottom: 100px;
+    background-image: url(https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=2864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+
+div#hero-right > p:nth-child(3){
+    margin-bottom: 50px;
+}
